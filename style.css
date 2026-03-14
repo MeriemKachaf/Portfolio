@@ -622,3 +622,13 @@ a{
     padding:20px;
   }
 }
+.timeline-content h4{
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--primary);
+  margin-bottom: 8px;
+}
+
+.timeline-content p strong{
+  color: var(--dark);
+}
