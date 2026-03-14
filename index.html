@@ -1,280 +1,421 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Portfolio - Meriem Kachaf</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-<link rel="stylesheet" href="style.css">
-
-</head>
-
-<body>
-
-<nav>
-<div class="nav-container">
-
-<a href="#" class="logo">MK</a>
-
-<div class="nav-links">
-
-<a href="#presentation"><i class="fas fa-user"></i> Présentation</a>
-<a href="#parcours"><i class="fas fa-graduation-cap"></i> Parcours</a>
-<a href="#competences"><i class="fas fa-laptop-code"></i> Compétences</a>
-<a href="#projets"><i class="fas fa-project-diagram"></i> Projets</a>
-<a href="#veille"><i class="fas fa-binoculars"></i> Veille</a>
-<a href="#cv"><i class="fas fa-file-download"></i> CV</a>
-<a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
-
-</div>
-
-<button class="hamburger">
-<i class="fas fa-bars"></i>
-</button>
-
-</div>
-</nav>
-
-
-<header>
-
-<div class="header-content">
-
-<h1>Meriem Kachaf</h1>
-
-<p>Développeuse Web — BTS SIO SLAM</p>
-
-<div class="social-links">
-
-<a href="https://github.com/Mkachaf" target="_blank">
-<i class="fab fa-github"></i>
-</a>
-
-<a href="https://www.linkedin.com/in/meriem-kachaf-3155a828a/" target="_blank">
-<i class="fab fa-linkedin"></i>
-</a>
-
-</div>
-
-</div>
-
-</header>
-
-
-<main>
-
-<section id="presentation">
-
-<h2>Présentation</h2>
-
-<div class="card">
-
-<p>
-
-Je m'appelle <strong>Meriem Kachaf</strong>, Je suis une étudiante passionnée par l'informatique, en reconversion après un parcours initial en commerce. Actuellement en formation BTS SIO option SLAM, je me spécialise dans le développement web et les solutions logicielles.
-
-</p>
-
-</div>
-
-</section>
-
-
-
-<section id="projets">
-
-<h2>Projets</h2>
-
-<div class="projects-grid">
-
-
-<div class="project-card">
-
-<h3>Application Billetterie Football</h3>
-
-<p>
-
-Application client lourd développée en JavaFX permettant de gérer la billetterie
-des matchs de football : gestion des matchs, supporters et tickets avec une base
-de données MySQL.
-
-</p>
-
-<p class="tech">
-Java • JavaFX • MySQL • Maven
-</p>
-
-</div>
-
-
-
-<div class="project-card">
-
-<h3>Gestion de Bibliothèque</h3>
-
-<p>
-
-Application web développée avec Laravel permettant de gérer des livres et leurs
-emprunts : consultation, ajout, modification et suppression de livres.
-
-</p>
-
-<p class="tech">
-Laravel • PHP • MySQL • Blade
-</p>
-
-</div>
-
-
-
-<div class="project-card">
-
-<h3>Stage — Mairie du Chesnay</h3>
-
-<p>
-
-Stage de 6 semaines où j’ai participé à l’installation de postes informatiques,
-au support technique des utilisateurs et à la création de scripts PowerShell.
-
-</p>
-
-<p class="tech">
-PowerShell • SQL • GLPI
-</p>
-
-</div>
-
-
-
-<div class="project-card">
-
-<h3>Alternance — Mairie de Fontenay-sous-Bois</h3>
-
-<p>
-
-Alternance en tant que technicienne informatique : support niveau 1 et 2,
-installation et maintenance des postes et gestion des incidents.
-
-</p>
-
-<p class="tech">
-Support IT • Réseau • Maintenance
-</p>
-
-</div>
-
-
-
-<div class="project-card">
-
-<h3>MK World</h3>
-
-<p>
-
-Site web de décoration intérieure développé en HTML, CSS et JavaScript
-avec galerie et formulaire de contact.
-
-</p>
-
-<p class="tech">
-HTML • CSS • JavaScript
-</p>
-
-</div>
-
-
-</div>
-
-</section>
-
-
-
-<section id="veille">
-
-<h2>Veille technologique</h2>
-
-<div class="card">
-
-<p>
-
-Je réalise une veille technologique sur l’impact de l’intelligence artificielle
-dans la cybersécurité, notamment sur les deepfakes.
-
-</p>
-
-<p>
-
-Un article publié en 2026 sur TechRadar explique que l’IA peut être utilisée
-par des hackers pour créer de fausses vidéos ou audios afin d’usurper l’identité
-de dirigeants.
-
-</p>
-
-<p>
-
-Pour suivre ces évolutions, j’utilise des outils comme
-<strong>Google Alerts</strong> et <strong>Feedly</strong> ou <strong>Medium</strong> afin de consulter
-des sources fiables et récentes.
-
-</p>
-
-</div>
-
-</section>
-
-
-
-<section id="cv">
-
-<h2>Mon CV</h2>
-
-<div class="card">
-
-<a href="CV_MERIEM.pdf" download class="btn">
-
-Télécharger mon CV
-
-</a>
-
-</div>
-
-</section>
-
-
-
-<section id="contact">
-
-<h2>Contact</h2>
-
-<div class="card">
-
-<form id="contactForm">
-
-<input type="text" placeholder="Nom" required>
-
-<input type="email" placeholder="Email" required>
-
-<textarea placeholder="Message"></textarea>
-
-<button type="submit">Envoyer</button>
-
-</form>
-
-<p id="formMessage"></p>
-
-</div>
-
-</section>
-
-
-
-</main>
-
-<script src="script.js"></script>
-
-</body>
-</html>
+    <!DOCTYPE html>
+    <html lang="fr">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Meriem Kachaf</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="container nav-container">
+        <a href="#hero" class="logo">MK</a>
+
+        <button class="hamburger" aria-label="Ouvrir le menu">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <div class="nav-links">
+            <a href="#presentation">Présentation</a>
+            <a href="#parcours">Parcours</a>
+            <a href="#competences">Compétences</a>
+            <a href="#projets">Projets</a>
+            <a href="#experiences">Expériences</a>
+            <a href="#veille">Veille</a>
+            <a href="#cv">CV</a>
+            <a href="#contact">Contact</a>
+        </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header id="hero" class="hero">
+        <div class="container hero-content">
+        <p class="hero-subtitle">Portfolio BTS SIO SLAM</p>
+        <h1>Meriem Kachaf</h1>
+        <p class="hero-text">
+            Étudiante en informatique, passionnée par le développement web,
+            les bases de données et les solutions numériques.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#projets" class="btn btn-primary">Voir mes projets</a>
+            <a href="#contact" class="btn btn-secondary">Me contacter</a>
+        </div>
+
+        <div class="social-links">
+            <a href="https://github.com/" target="_blank" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- PRESENTATION -->
+        <section id="presentation" class="section">
+        <div class="container">
+            <div class="section-title">
+            <span>01</span>
+            <h2>Présentation</h2>
+            </div>
+
+            <div class="about-wrapper card">
+            <div class="about-image">
+                <img src="assets/images/images.jpg" alt="Présentation de Meriem Kachaf" />
+            </div>
+
+            <div class="about-text">
+                <h3>À propos de moi</h3>
+                <p>
+                Je m’appelle <strong>Meriem Kachaf</strong>, étudiante en
+                <strong>BTS SIO option SLAM</strong>. Je suis passionnée par
+                l’informatique, le développement d’applications et les nouvelles
+                technologies.
+                </p>
+                <p>
+                Mon parcours me permet de développer des compétences en
+                programmation, en gestion de base de données, en support
+                informatique et en conception de solutions adaptées aux besoins
+                des utilisateurs.
+                </p>
+                <p>
+                À travers ce portfolio, je présente mes projets, mes expériences
+                professionnelles et ma veille technologique.
+                </p>
+            </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- PARCOURS -->
+        <section id="parcours" class="section section-alt">
+        <div class="container">
+            <div class="section-title">
+            <span>02</span>
+            <h2>Parcours</h2>
+            </div>
+
+            <div class="timeline">
+            <div class="timeline-item card">
+                <div class="timeline-date">Aujourd’hui</div>
+                <div class="timeline-content">
+                <h3>BTS SIO — Option SLAM</h3>
+                <p>
+                    Formation orientée vers le développement d’applications, les bases
+                    de données, les technologies web et la gestion de projets
+                    informatiques.
+                </p>
+                </div>
+            </div>
+
+            <div class="timeline-item card">
+                <div class="timeline-date">2025 - 2026</div>
+                <div class="timeline-content">
+                <h3>Alternance — Mairie de Fontenay-sous-Bois</h3>
+                <p>
+                    Expérience en support informatique, maintenance des postes de
+                    travail, gestion des incidents et assistance aux utilisateurs.
+                </p>
+                </div>
+            </div>
+
+            <div class="timeline-item card">
+                <div class="timeline-date">Avril 2025 - Mai 2025</div>
+                <div class="timeline-content">
+                <h3>Stage — Mairie du Chesnay-Rocquencourt</h3>
+                <p>
+                    Découverte du fonctionnement d’un service informatique :
+                    déploiement, support, scripts PowerShell et manipulation de bases
+                    SQL.
+                </p>
+                </div>
+            </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- COMPETENCES -->
+        <section id="competences" class="section">
+        <div class="container">
+            <div class="section-title">
+            <span>03</span>
+            <h2>Compétences</h2>
+            </div>
+
+            <div class="skills-grid">
+            <div class="skill-card card">
+                <div class="skill-icon">
+                <i class="fas fa-code"></i>
+                </div>
+                <h3>Développement</h3>
+                <p>HTML, CSS, JavaScript, PHP, Java, Laravel, JavaFX</p>
+            </div>
+
+            <div class="skill-card card">
+                <div class="skill-icon">
+                <i class="fas fa-database"></i>
+                </div>
+                <h3>Base de données</h3>
+                <p>MySQL, SQL, phpMyAdmin, conception et gestion de données</p>
+            </div>
+
+            <div class="skill-card card">
+                <div class="skill-icon">
+                <i class="fas fa-screwdriver-wrench"></i>
+                </div>
+                <h3>Outils</h3>
+                <p>Git, GitHub, Maven, IntelliJ IDEA, XAMPP, GLPI, Proxmox</p>
+            </div>
+
+            <div class="skill-card card">
+                <div class="skill-icon">
+                <i class="fas fa-headset"></i>
+                </div>
+                <h3>Support informatique</h3>
+                <p>Support niveau 1 et 2, maintenance, diagnostic et gestion d’incidents</p>
+            </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- PROJETS -->
+        <section id="projets" class="section section-alt">
+        <div class="container">
+            <div class="section-title">
+            <span>04</span>
+            <h2>Projets</h2>
+            </div>
+
+            <div class="projects-grid">
+
+            <article class="project-card card">
+                <div class="project-image">
+                <img src="assets/images/LARAVEL.jpeg" alt="Projet Laravel" />
+                </div>
+                <div class="project-content">
+                <h3>Gestion de bibliothèque — Laravel</h3>
+                <p>
+                    Application web permettant de gérer des livres et leurs emprunts.
+                    L’utilisateur peut consulter, ajouter, modifier ou supprimer un
+                    livre et enregistrer un emprunt.
+                </p>
+                <div class="project-tags">
+                    <span>Laravel</span>
+                    <span>PHP</span>
+                    <span>MySQL</span>
+                    <span>Blade</span>
+                    <span>HTML/CSS</span>
+                </div>
+                </div>
+            </article>
+
+            <article class="project-card card">
+                <div class="project-image">
+                <img src="assets/images/Billetterie.jpg" alt="Projet billetterie football" />
+                </div>
+                <div class="project-content">
+                <h3>Billetterie des matchs de football</h3>
+                <p>
+                    Application client lourd développée en JavaFX permettant de gérer
+                    les matchs, les supporters et les tickets via une interface
+                    graphique reliée à une base de données MySQL.
+                </p>
+                <div class="project-tags">
+                    <span>Java</span>
+                    <span>JavaFX</span>
+                    <span>MySQL</span>
+                    <span>Maven</span>
+                    <span>PlantUML</span>
+                </div>
+                </div>
+            </article>
+
+            <article class="project-card card">
+                <div class="project-image">
+                <img src="assets/images/deco.jpg" alt="Projet MK World" />
+                </div>
+                <div class="project-content">
+                <h3>MK World</h3>
+                <p>
+                    Site vitrine de décoration intérieure conçu en HTML, CSS et
+                    JavaScript, avec une présentation moderne et une mise en valeur
+                    visuelle des produits.
+                </p>
+                <div class="project-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+                </div>
+            </article>
+
+            </div>
+        </div>
+        </section>
+
+        <!-- EXPERIENCES -->
+        <section id="experiences" class="section">
+        <div class="container">
+            <div class="section-title">
+            <span>05</span>
+            <h2>Expériences</h2>
+            </div>
+
+            <div class="projects-grid">
+
+            <article class="project-card card">
+                <div class="project-image">
+                <img src="assets/images/images.png" alt="Stage Mairie du Chesnay" />
+                </div>
+                <div class="project-content">
+                <h3>Stage — Mairie du Chesnay-Rocquencourt</h3>
+                <p>
+                    Installation et déploiement de postes, manipulation d’une base
+                    SQL via Mainti4, création de scripts PowerShell et support
+                    technique aux utilisateurs via GLPI.
+                </p>
+                <div class="project-tags">
+                    <span>PowerShell</span>
+                    <span>SQL</span>
+                    <span>GLPI</span>
+                    <span>Proxmox</span>
+                </div>
+                </div>
+            </article>
+
+            <article class="project-card card">
+                <div class="project-image">
+                <img src="assets/images/fontenay_sous_bois.webp" alt="Alternance Fontenay-sous-Bois" />
+                </div>
+                <div class="project-content">
+                <h3>Alternance — Mairie de Fontenay-sous-Bois</h3>
+                <p>
+                    Support informatique de niveau 1 et 2, diagnostic et suivi des
+                    incidents matériels et logiciels, installation, configuration et
+                    maintenance des postes de travail.
+                </p>
+                <div class="project-tags">
+                    <span>Support IT</span>
+                    <span>Maintenance</span>
+                    <span>Incidents</span>
+                    <span>Réseau</span>
+                </div>
+                </div>
+            </article>
+
+            </div>
+        </div>
+        </section>
+
+        <!-- VEILLE -->
+        <section id="veille" class="section section-alt">
+        <div class="container">
+            <div class="section-title">
+            <span>06</span>
+            <h2>Veille technologique</h2>
+            </div>
+
+            <div class="about-wrapper card">
+            <div class="about-image">
+                <img src="assets/images/veille.jpg" alt="Veille technologique" />
+            </div>
+
+            <div class="about-text">
+                <h3>IA, cybersécurité et deepfakes</h3>
+                <p>
+                Dans le cadre de ma veille technologique, je m’intéresse à
+                l’impact de l’intelligence artificielle dans la cybersécurité,
+                notamment aux deepfakes.
+                </p>
+                <p>
+                Un article récent explique que l’IA peut être utilisée pour créer
+                de faux contenus audio ou vidéo destinés à tromper les entreprises
+                et à usurper l’identité de dirigeants.
+                </p>
+                <p>
+                Pour suivre ces évolutions, j’utilise des outils comme
+                <strong>Google Alerts</strong> et <strong>Feedly</strong> afin de
+                consulter régulièrement des sources fiables et récentes.
+                </p>
+            </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- CV -->
+        <section id="cv" class="section">
+        <div class="container">
+            <div class="section-title">
+            <span>07</span>
+            <h2>CV</h2>
+            </div>
+
+            <div class="card cv-card">
+            <p>
+                Vous pouvez consulter et télécharger mon CV pour découvrir plus en
+                détail mon parcours, mes compétences et mes expériences.
+            </p>
+            <a href="CV_MERIEM.pdf" download class="btn btn-primary">
+                <i class="fas fa-download"></i> Télécharger mon CV
+            </a>
+            </div>
+        </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section section-alt">
+        <div class="container">
+            <div class="section-title">
+            <span>08</span>
+            <h2>Contact</h2>
+            </div>
+
+            <div class="card contact-card">
+            <form id="contactForm">
+                <div class="form-row">
+                <input type="text" placeholder="Votre nom" required />
+                <input type="email" placeholder="Votre email" required />
+                </div>
+
+                <textarea rows="6" placeholder="Votre message" required></textarea>
+
+                <button type="submit" class="btn btn-primary">
+                Envoyer
+                </button>
+            </form>
+
+            <p id="formMessage"></p>
+            </div>
+        </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+        <p>© 2026 - Meriem Kachaf | Portfolio BTS SIO SLAM</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    </body>
+    </html>
