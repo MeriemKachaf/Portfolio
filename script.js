@@ -55,6 +55,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.querySelectorAll(".reveal").forEach(el => revealObserver.observe(el));
 
+  // ── Mentions légales modal ───────────────────────────────
+  const mentionsModal = document.getElementById("mentionsModal");
+  document.getElementById("openMentions").addEventListener("click", () => mentionsModal.classList.add("active"));
+  document.getElementById("closeMentions").addEventListener("click", () => mentionsModal.classList.remove("active"));
+  mentionsModal.addEventListener("click", e => { if (e.target === mentionsModal) mentionsModal.classList.remove("active"); });
+
   // ── Contact form ─────────────────────────────────────────
   emailjs.init("7LD0WrUnaAaXmnF2t");
 

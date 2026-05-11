@@ -1141,6 +1141,59 @@ a{
   transform:translateY(-3px);
 }
 
+/* MENTIONS LÉGALES BUTTON */
+.mentions-link{
+  background:none;
+  border:none;
+  color:rgba(255,255,255,0.5);
+  font-size:.8rem;
+  cursor:pointer;
+  text-decoration:underline;
+  padding:0;
+  font-family:inherit;
+}
+.mentions-link:hover{ color:var(--white); }
+
+/* MODAL */
+.modal-overlay{
+  display:none;
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.6);
+  z-index:2000;
+  align-items:center;
+  justify-content:center;
+  padding:1rem;
+}
+.modal-overlay.active{ display:flex; }
+.modal-box{
+  background:var(--white);
+  border-radius:var(--radius);
+  padding:2rem;
+  max-width:640px;
+  width:100%;
+  max-height:85vh;
+  overflow-y:auto;
+  position:relative;
+  color:var(--dark);
+}
+.modal-box h2{ font-size:1.4rem; margin-bottom:1.2rem; color:var(--primary); }
+.modal-box h3{ font-size:1rem; font-weight:600; margin:1.2rem 0 .4rem; color:var(--dark); }
+.modal-box p{ font-size:.9rem; line-height:1.7; color:var(--gray); }
+.modal-box a{ color:var(--primary); }
+.modal-close{
+  position:absolute;
+  top:1rem;
+  right:1rem;
+  background:none;
+  border:none;
+  font-size:1.5rem;
+  cursor:pointer;
+  color:var(--gray);
+  line-height:1;
+}
+.modal-close:hover{ color:var(--dark); }
+
 /* SCROLL TO TOP */
 .scroll-top{
   position:fixed;
