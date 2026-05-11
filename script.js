@@ -56,18 +56,40 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll(".reveal").forEach(el => revealObserver.observe(el));
 
   // ── Contact form ─────────────────────────────────────────
+  emailjs.init("7LD0WrUnaAaXmnF2t");
+
   const form = document.getElementById("contactForm");
   const formMessage = document.getElementById("formMessage");
 
   if (form && formMessage) {
     form.addEventListener("submit", e => {
       e.preventDefault();
-      formMessage.textContent = "✓ Merci pour votre message ! Je vous répondrai très prochainement.";
-      formMessage.style.color = "#3730a3";
-      setTimeout(() => {
-        form.reset();
-        formMessage.textContent = "";
-      }, 4000);
+
+      const submitBtn = form.querySelector("button[type='submit']");
+      submitBtn.disabled = true;
+      submitBtn.textContent = "Envoi en cours...";
+
+      const templateParams = {
+        from_name: document.getElementById("contact-name").value,
+        from_email: document.getElementById("contact-email").value,
+        message: document.getElementById("contact-message").value,
+      };
+
+      emailjs.send("service_8wfub3f", "template_4f07omf", templateParams)
+        .then(() => {
+          formMessage.textContent = "✓ Merci pour votre message ! Je vous répondrai très prochainement.";
+          formMessage.style.color = "#3730a3";
+          form.reset();
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Envoyer';
+          setTimeout(() => { formMessage.textContent = ""; }, 5000);
+        })
+        .catch(() => {
+          formMessage.textContent = "✗ Une erreur est survenue. Veuillez réessayer ou m'écrire directement par email.";
+          formMessage.style.color = "#dc2626";
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Envoyer';
+        });
     });
   }
 
